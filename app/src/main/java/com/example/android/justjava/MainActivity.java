@@ -27,20 +27,13 @@ import java.util.Locale;
  */
 public class MainActivity extends AppCompatActivity {
     public static final double PRICE_PER_COFFEE = 5;
+    int numberOfCoffees = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    /**
-     * This method is called when the order button is clicked.
-     */
-    public void submitOrder(View view) {
-        int numberOfCoffees = 2;
-        display(numberOfCoffees);
-        displayPrice(numberOfCoffees * PRICE_PER_COFFEE);
     }
 
     /**
@@ -50,14 +43,29 @@ public class MainActivity extends AppCompatActivity {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
     }
-    public void increment (View view) {
-        int quantity = 3;
-        display(quantity);
+
+    /**
+     * This method is called when the + button is clicked.
+     */
+    public void increment(View view) {
+        numberOfCoffees = numberOfCoffees + 1;
+        display(numberOfCoffees);
     }
 
-    public void decrement (View view) {
-        int quantity = 1;
-        display(quantity);
+    /**
+     * This method is called when the - button is clicked.
+     */
+    public void decrement(View view) {
+        numberOfCoffees = numberOfCoffees - 1;
+        display(numberOfCoffees);
+    }
+
+    /**
+     * This method is called when the order button is clicked.
+     */
+    public void submitOrder(View view) {
+
+        displayPrice(numberOfCoffees * PRICE_PER_COFFEE);
     }
 
     /**
@@ -70,7 +78,5 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(curr.getSymbol(bgLocale));
         priceTextView.setText(NumberFormat.getCurrencyInstance(bgLocale).format(number));
     }
-
-
 
 }

@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Just Java</string>
     <string name="quantity">quantity</string>
-    <string name="quantity_value">2</string>
+    <string name="quantity_value">0</string>
     <string name="button">Order</string>
     <string name="price">price</string>
-    <string name="price_value">10,00 ЛВ.</string>
+    <string name="price_value">0,00 ЛВ.</string>
     <string name="addCoffee">+</string>
     <string name="subtract_coffee">-</string>
 </resources>
