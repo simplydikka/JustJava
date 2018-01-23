@@ -3,8 +3,10 @@
     <string name="quantity">quantity</string>
     <string name="quantity_value">0</string>
     <string name="button">Order</string>
-    <string name="price">price</string>
-    <string name="price_value">0,00 ЛВ.</string>
+    <string name="orderSummary">Order Summary</string>
+    <string name="price_value">0лв.</string>
     <string name="addCoffee">+</string>
     <string name="subtract_coffee">-</string>
+    <string name="toppings">toppings</string>
+    <string name="topping01">Whipped cream</string>
 </resources>
