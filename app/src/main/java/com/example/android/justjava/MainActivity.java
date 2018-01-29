@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void displayQuantity(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + number);
+        quantityTextView.setText(number);
     }
 
     /**
@@ -81,11 +81,6 @@ public class MainActivity extends AppCompatActivity {
      * hides the keyboard
      */
 
-    public void hideKeyboard(View view) {
-        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
-        inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
-
-    }
 
     /**
      * Calculates the total price of the order and shows a summary of the order
@@ -132,7 +127,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
 }
 
 
