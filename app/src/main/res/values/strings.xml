@@ -9,4 +9,7 @@
     <string name="subtract_coffee">-</string>
     <string name="toppings">toppings</string>
     <string name="topping01">Whipped cream</string>
+    <string name="topping02">Chocolate</string>
+    <string name="name">Name</string>
+
 </resources>
